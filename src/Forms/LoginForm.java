@@ -65,7 +65,7 @@ public class LoginForm extends javax.swing.JFrame {
         jb_sair.setText("Sair");
         getContentPane().add(jb_sair, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 290, 80, -1));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Others/BGLogin.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Res/BGLogin.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -20, 660, 410));
 
         jm_conexao.setText("Conexão");
@@ -77,8 +77,8 @@ public class LoginForm extends javax.swing.JFrame {
 
         setJMenuBar(mb_barrademenu);
 
-        setSize(new java.awt.Dimension(613, 421));
-        setLocationRelativeTo(null);
+        java.awt.Dimension screenSize = java.awt.Toolkit.getDefaultToolkit().getScreenSize();
+        setBounds((screenSize.width-613)/2, (screenSize.height-421)/2, 613, 421);
     }// </editor-fold>//GEN-END:initComponents
 
     /**
