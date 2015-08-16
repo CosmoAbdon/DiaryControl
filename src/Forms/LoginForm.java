@@ -27,20 +27,58 @@ public class LoginForm extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        la_usuario = new javax.swing.JLabel();
+        la_senha = new javax.swing.JLabel();
+        tf_user = new javax.swing.JTextField();
+        pf_pass = new javax.swing.JPasswordField();
+        jb_entrar = new javax.swing.JButton();
+        jb_sair = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        mb_barrademenu = new javax.swing.JMenuBar();
+        jm_conexao = new javax.swing.JMenu();
+        mi_configConexao = new javax.swing.JMenuItem();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(566, 371));
+        setResizable(false);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        la_usuario.setFont(new java.awt.Font("Arial Black", 0, 18)); // NOI18N
+        la_usuario.setForeground(new java.awt.Color(255, 255, 255));
+        la_usuario.setText("Usuário:");
+        getContentPane().add(la_usuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 140, 100, 30));
 
-        pack();
+        la_senha.setFont(new java.awt.Font("Arial Black", 0, 18)); // NOI18N
+        la_senha.setForeground(new java.awt.Color(255, 255, 255));
+        la_senha.setText("Senha:");
+        getContentPane().add(la_senha, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 210, 100, 30));
+
+        tf_user.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        getContentPane().add(tf_user, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 140, 170, 30));
+        getContentPane().add(pf_pass, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 210, 170, 30));
+
+        jb_entrar.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
+        jb_entrar.setText("Entrar");
+        getContentPane().add(jb_entrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 290, 90, -1));
+
+        jb_sair.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
+        jb_sair.setText("Sair");
+        getContentPane().add(jb_sair, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 290, 80, -1));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Others/BGLogin.png"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -20, 660, 410));
+
+        jm_conexao.setText("Conexão");
+
+        mi_configConexao.setText("Configurar conexão...");
+        jm_conexao.add(mi_configConexao);
+
+        mb_barrademenu.add(jm_conexao);
+
+        setJMenuBar(mb_barrademenu);
+
+        setSize(new java.awt.Dimension(613, 421));
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     /**
@@ -79,5 +117,15 @@ public class LoginForm extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JButton jb_entrar;
+    private javax.swing.JButton jb_sair;
+    private javax.swing.JMenu jm_conexao;
+    private javax.swing.JLabel la_senha;
+    private javax.swing.JLabel la_usuario;
+    private javax.swing.JMenuBar mb_barrademenu;
+    private javax.swing.JMenuItem mi_configConexao;
+    private javax.swing.JPasswordField pf_pass;
+    private javax.swing.JTextField tf_user;
     // End of variables declaration//GEN-END:variables
 }
